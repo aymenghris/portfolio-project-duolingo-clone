@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss";
+import type { Config } from "tailwindcss"
 
 const config: Config = {
     darkMode: ["class"],
@@ -32,13 +32,8 @@ const config: Config = {
                     120: "#ea2b2b",
                 },
             },
-            borderRadius: {
-                lg: "var(--radius)",
-                md: "calc(var(--radius) - 2px)",
-                sm: "calc(var(--radius) - 4px)",
-            },
         },
     },
-    plugins: [require("tailwindcss-animate")],
+    plugins: [],
 }
-export default config;
+export default config
