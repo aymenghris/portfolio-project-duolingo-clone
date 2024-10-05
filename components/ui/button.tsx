@@ -11,7 +11,16 @@ const buttonVariants = cva(
             variant: {
                 default:
                     "bg-white text-black border-slate-200 border-2 border-b-4 active:border-b-2 hover:bg-slate-100 text-slate-500",
-                primary: "bg-sky-400 text-primary-foreground hover:bg-sky-500",
+                primary:
+                    "bg-sky-400 text-white hover:bg-sky-400/90 border-sky-500 border-b-4 active:border-b-0",
+                primaryOutline: "bg-white text-sky-500 hover:bg-sky-400/5",
+                secondary:
+                    "bg-success-100 text-white hover:bg-success-110 border-success-120 border-b-4 active:border-b-0",
+                secondaryOutline:
+                    "bg-white text-success-100 hover:bg-success-100/5",
+                danger: "bg-danger-100 text-white hover:bg-danger-110 border-danger-120 border-b-4 active:border-b-0",
+                dangerOutline:
+                    "bg-white text-danger-100 hover:bg-danger-110/5",
             },
             size: {
                 default: "h-11 px-4 py-2",
