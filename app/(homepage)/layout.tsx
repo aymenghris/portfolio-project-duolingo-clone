@@ -26,19 +26,9 @@ export default function MarketingLayout({
 }: Readonly<MarketingLayoutProps>) {
     return (
         <div className="flex min-h-screen flex-col">
-            <AuthContent
-                signedInComponent={<DashboardHeader />}
-                signedOutComponent={<HomepageHeader />}
-            />
-
             <main className="flex flex-1 flex-col items-center justify-center">
                 {children}
             </main>
-
-            <AuthContent
-                signedInComponent={<DashboardFooter />}
-                signedOutComponent={<HomepageFooter />}
-            />
         </div>
     )
 }

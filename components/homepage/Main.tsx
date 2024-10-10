@@ -2,7 +2,7 @@ import { MainDuoAnimation } from '@/components/homepage/animations/MainDuoAnimat
 import { Button } from '@/components/ui/button'
 import { ffDinBold } from '@/public/font/fonts'
 
-export default function HomepageMain() {
+export const HomepageMain = () => {
     return (
         <div className="mx-auto flex w-full max-w-[988px] flex-1 flex-col items-center justify-center gap-2 p-4 lg:flex-row">
             <MainDuoAnimation />
