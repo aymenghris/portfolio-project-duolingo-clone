@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { ClerkProvider } from '@clerk/nextjs'
 import { ffDinRegular } from '../public/font/fonts'
 
-import './globals.css'
+import './globals.sass'
 
 export const metadata: Metadata = {
     title: 'Duolingo Clone',

@@ -1,22 +1,3 @@
-import { DashboardHeader } from '@/components/dashboard/Header'
-import { DashboardFooter } from '@/components/dashboard/Footer'
-import { ClerkLoaded, SignedIn, SignedOut } from '@clerk/nextjs'
-import { HomepageHeader } from '@/components/homepage/Header'
-import { HomepageFooter } from '@/components/homepage/Footer'
-
-const AuthContent = ({
-    signedInComponent,
-    signedOutComponent,
-}: {
-    signedInComponent: JSX.Element
-    signedOutComponent: JSX.Element
-}) => (
-    <ClerkLoaded>
-        <SignedIn>{signedInComponent}</SignedIn>
-        <SignedOut>{signedOutComponent}</SignedOut>
-    </ClerkLoaded>
-)
-
 type MarketingLayoutProps = {
     children: React.ReactNode
 }

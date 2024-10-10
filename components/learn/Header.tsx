@@ -10,7 +10,7 @@ import {
 import { Loader2 } from 'lucide-react'
 import Image from 'next/image'
 
-export const DashboardHeader = () => {
+export const LearnHeader = () => {
     return (
         <header className="h-24 w-full border-b-2 border-slate-200 px-4">
             <div className="mx-auto h-full lg:max-w-screen-lg">
