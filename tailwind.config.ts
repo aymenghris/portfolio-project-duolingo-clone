@@ -10,6 +10,10 @@ const config: Config = {
     theme: {
         extend: {
             colors: {
+                primary: {
+                    100: '#DDF4FF',
+                    110: '#1cb0f6',
+                },
                 success: {
                     100: '#D7FFB8',
                     110: '#61e002',

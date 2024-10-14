@@ -1,1 +1,1 @@
-export const LearnFooter = () => <footer className=""></footer>
+export const Footer = () => <footer className=""></footer>
