@@ -1,6 +1,6 @@
-import { Exercises } from '@/components/learn/Exercises'
-import { ProgressBar } from '@/components/learn/ProgressBar'
-import { Sidebar } from '@/components/learn/sidebars/Sidebar'
+import { Exercises } from '@/components/dashboard/learn/Learn'
+import { ProgressBar } from '@/components/dashboard/ProgressBar'
+import { Sidebar } from '@/components/dashboard/sidebars/Sidebar'
 
 type MainLayoutProps = {
     children: React.ReactNode

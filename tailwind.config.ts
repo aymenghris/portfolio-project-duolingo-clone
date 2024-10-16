@@ -12,7 +12,8 @@ const config: Config = {
             colors: {
                 primary: {
                     100: '#DDF4FF',
-                    110: '#1cb0f6',
+                    110: 'rgb(132 216 255)',
+                    120: '#1cb0f6',
                 },
                 success: {
                     100: '#D7FFB8',
@@ -32,6 +33,9 @@ const config: Config = {
                     110: '#FF4B4B',
                     120: '#EA2B2B',
                 },
+            },
+            screens: {
+                clg: '1160px',
             },
         },
     },
