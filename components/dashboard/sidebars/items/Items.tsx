@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { ffDinBold } from '@/public/font/fonts'
-import { itemsInfo } from '@/components/dashboard/sidebars/items/itemsInfo'
+import { itemsInfo } from '@/components/dashboard/sidebars/items/data/itemsInfo'
 
 type SidebarItemProps = {
     itemTitle: string
@@ -9,11 +9,11 @@ type SidebarItemProps = {
     itemPath: string
 }
 
-export const SidebarItems = () => {
+export const Items = () => {
     return (
         <div className="flex flex-col gap-2">
             {itemsInfo.map((item) => (
-                <SidebarItem
+                <Item
                     key={item.title}
                     itemTitle={item.title}
                     itemPath={item.path}
@@ -24,7 +24,7 @@ export const SidebarItems = () => {
     )
 }
 
-const SidebarItem = ({ itemTitle, itemIcon, itemPath }: SidebarItemProps) => {
+export const Item = ({ itemTitle, itemIcon, itemPath }: SidebarItemProps) => {
     const path = usePathname()
 
     const routeChecker = () => {
@@ -37,11 +37,13 @@ const SidebarItem = ({ itemTitle, itemIcon, itemPath }: SidebarItemProps) => {
     return (
         <div
             className={
-                'flex h-[52px] w-14 cursor-pointer items-center justify-center rounded-xl px-2 py-1 clg:w-[222px] clg:justify-start' +
+                'flex h-[52px] w-14 items-center justify-center rounded-xl px-2 py-1 clg:w-[222px] clg:justify-start' +
                 ' ' +
                 (routeChecker()
                     ? 'border-2 border-primary-110 bg-primary-100'
-                    : 'border-2 border-transparent hover:bg-zinc-100/60')
+                    : 'border-2 border-transparent hover:bg-zinc-100/60') +
+                ' ' +
+                (itemTitle === 'more' ? 'cursor-default' : 'cursor-pointer')
             }
         >
             <div className="flex clg:mr-5">

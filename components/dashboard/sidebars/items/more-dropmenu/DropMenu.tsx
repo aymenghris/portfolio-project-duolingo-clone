@@ -1,11 +1,13 @@
 import { useState } from 'react'
+import { Item } from '../Items'
+import { MenuItems } from './DropmenuItems'
 
 export const Dropdown: React.FC = () => {
     const [isOpen, setIsOpen] = useState(true)
 
     return (
         <div
-            className="relative inline-block text-left"
+            className="relative"
             // onMouseEnter={() => setIsOpen(true)}
             // onMouseLeave={() => setIsOpen(false)}
         >
@@ -22,19 +24,9 @@ export const Dropdown: React.FC = () => {
 }
 
 const DropdownMenu = () => (
-    <div className="absolute -bottom-[56px] left-[230px] mt-2 w-56 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-        <div className="py-1">
-            {['Account settings', 'Support', 'License', 'Sign out'].map(
-                (item) => (
-                    <a
-                        key={item}
-                        href="#"
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                    >
-                        {item}
-                    </a>
-                )
-            )}
+    <div className="absolute -bottom-[56px] left-[230px] h-[262px] w-[256px] rounded-2xl border-2 border-neutral-300/70 bg-white">
+        <div className="py-2">
+            <MenuItems />
         </div>
     </div>
 )
