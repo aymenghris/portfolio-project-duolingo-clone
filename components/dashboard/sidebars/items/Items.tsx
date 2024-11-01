@@ -2,6 +2,8 @@ import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { ffDinBold } from '@/public/font/fonts'
 import { itemsInfo } from '@/components/dashboard/sidebars/items/data/itemsInfo'
+import { DropdownMenu } from './more-dropmenu/DropMenu'
+import { MoreItem } from './MoreItem'
 
 type SidebarItemProps = {
     itemTitle: string
@@ -20,6 +22,7 @@ export const Items = () => {
                     itemIcon={item.icon}
                 />
             ))}
+            <MoreItem />
         </div>
     )
 }
@@ -49,6 +52,7 @@ export const Item = ({ itemTitle, itemIcon, itemPath }: SidebarItemProps) => {
         >
             <ItemIcon itemIcon={itemIcon} />
             <ItemTitle itemTitle={itemTitle} itemPath={itemPath} />
+            {itemTitle === 'more' && <DropdownMenu />}
         </div>
     )
 }

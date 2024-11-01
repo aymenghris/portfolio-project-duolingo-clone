@@ -22,7 +22,7 @@ export const SecondaryItems = () => {
 
 const SecondaryItem = ({ itemTitle }: SecondaryItemProps) => {
     return (
-        <div className="flex h-[52px] w-[252px] items-center justify-start border-2 border-transparent px-5 hover:bg-zinc-100/60">
+        <div className="flex h-[40px] w-[252px] items-center justify-start border-2 border-transparent px-5 hover:bg-zinc-100/60">
             <PrimaryItemTitle itemTitle={itemTitle} itemPath="" />
         </div>
     )
@@ -36,7 +36,7 @@ const PrimaryItemTitle = ({ itemTitle, itemPath }: SecondaryItemTitleProps) => {
     return (
         <div
             className={
-                'hidden text-[15px] uppercase tracking-wider text-zinc-500 clg:block' +
+                'text-[15px] uppercase tracking-wider text-zinc-500' +
                 ' ' +
                 ffDinBold.className
             }

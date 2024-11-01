@@ -29,9 +29,10 @@ export const itemsInfo = [
         path: '/profile',
         icon: '/images/sidebar-icons/profile.svg',
     },
-    {
-        title: 'more',
-        path: '',
-        icon: '/images/sidebar-icons/more.svg',
-    },
 ]
+
+export const moreItemInfo = {
+    title: 'more',
+    path: '',
+    icon: '/images/sidebar-icons/more.svg',
+}
